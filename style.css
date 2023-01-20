@@ -2,7 +2,7 @@
     --navy: rgb(0, 12, 29);
     --gray: #DAF7F3;
     --green: #2F928B;
-    --greenavy: #003A50;
+    --greenavy: #002f41;
 }
 
 *,
@@ -29,6 +29,8 @@ html:focus-within {
   }
 
 body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--gray);
     background-color: var(--navy);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -75,7 +77,6 @@ select {
     text-decoration: none;
     font-size: 17px;
     transition: 0.3s ease-out;
-    font-family: 'Raleway', sans-serif;
 }
 
 .nav a:hover,
@@ -87,4 +88,54 @@ select {
 .nav a.active {
     background-color: var(--gray);
     color: var(--navy);
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.intro h4 {
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.lts {
+  color: var(--green);
+  margin-left: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.profile {
+  width: 300px;
+  align-items: center;
+  display: flex;
+  border-radius: 30px;
+  margin-left: 40px;
+}
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.projects .ptitle {
+  border-bottom: 3px solid #CCC;
+  width: 450px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.projects .pcard {
+  background-color: var(--greenavy);
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;;
+  border-radius: 15px;
 }
