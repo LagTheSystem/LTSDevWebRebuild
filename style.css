@@ -35,6 +35,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    color: var(--gray)
 }
 
 img,
@@ -164,7 +165,8 @@ img.post {
 
 img.post:hover {
   height: 300px;
-  filter: brightness(40%)
+  filter: brightness(40%);
+  cursor: pointer;
 }
 
 .postscontainer .potitle {
@@ -179,6 +181,8 @@ img.post:hover {
   padding-bottom: 30px;
   border-radius: 15px;
   margin-top: 5px;
+  color: var(--gray);
+  text-decoration: none;
 }
 
 .posts .pocard h1 {
